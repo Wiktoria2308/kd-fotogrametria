@@ -25,7 +25,7 @@ const Categories: React.FC<CategoriesProps> = ({ title, description, mediaSource
         {mediaSources.map((media, index) => (
               <div key={index} className="w-full h-full overflow-hidden">
                 {media.type === 'image' ? (
-                  <img src={media.source} alt={`Category ${index + 1}`} className="w-full h-full object-cover" />
+                  <img src={media.source} alt={`Category ${index + 1} for ${title}`} className="w-full h-full object-cover" />
                 ) : media.type === 'video' ? (
                   <video controls className="w-full h-full">
                     <source src={media.source} type="video/mp4" />
