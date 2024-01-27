@@ -70,10 +70,10 @@ export default function Home() {
     title: "Przekroje poprzeczne i podłużne",
     description: "obrazują ukształtowanie terenu szczególnie przydatne w budownictwie, architekturze oraz geologii. Możliwość generowania przekrojów na podstawie danych fotogrametrycznych pozwala na przeprowadzenie szczegółowych analiz terenów rozległych na przykład pod projekty drogowe, kolejowe lub do wyznaczania zlewni w opracowaniach hydrologicznych.",
     mediaSources: [
-      { type: 'image', source: "przekrój1.jpg" },
-      { type: 'image', source: "przekrój2.jpg" },
-      { type: 'image', source: "przekrój3.jpg" },
-      { type: 'image', source: "przekrój4.jpg" },
+      { type: 'image', source: "Przekroj1.jpg" },
+      { type: 'image', source: "Przekroj2.jpg" },
+      { type: 'image', source: "Przekroj3.jpg" },
+      { type: 'image', source: "Przekroj4.jpg" },
     ],
   }
   const categoriesDokumentacjaGIS = {
@@ -90,10 +90,10 @@ export default function Home() {
     title: "Zdjęcia i filmy",
     description: "z lotu ptaka stanowią oryginalne i bardzo atrakcyjne rozwiązanie do wizualizacji terenów rekreacyjnych, osiedli mieszkaniowych lub nieruchomości przeznaczonych do sprzedaży. Zdjęcia i filmy mają ogromny potencjał także jako podstawowy monitoring czy inspekcja, ponieważ pozwalają na uchwycenie istotnych szczegółów terenowych lub udokumentowanie aktualnego stanu obiektu lub terenu.",
     mediaSources: [
-      { type: 'image', source: "zdjęcie1.jpg" },
-      { type: 'image', source: "zdjęcie2.jpg" },
-      { type: 'image', source: "zdjęcie3.jpg" },
-      { type: 'image', source: "zdjęcie4.jpg" },
+      { type: 'image', source: "zdjecie1.jpg" },
+      { type: 'image', source: "zdjecie2.jpg" },
+      { type: 'image', source: "zdjecie3.jpg" },
+      { type: 'image', source: "zdjecie4.jpg" },
     ],
   }
 
