@@ -2,6 +2,7 @@
 import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import Categories from '@/components/Categories';
+import Footer from "@/components/Footer";
 
 export default function Home() {
 
@@ -13,7 +14,7 @@ export default function Home() {
   const categoriesModele3D = {
     title: "Modele 3D",
     description: "wiernie odwzorowują wymiary, kształty oraz proporcje. Na ich podstawie można uzyskać wiele cennych informacji na przykład na temat budynku czy innego obiektu. Model 3D stanowi opracowanie pomocne w analizie stanu obiektu - spękania, szczeliny, ubytki. Na jego podstawie można tworzyć przekroje, dokumentacje architektoniczne, analizy obiektów przed pracami rekonstrukcyjnymi czy rozbiórkowymi, wizualizacje zabytków i innych obiektów. Stanowią również idealne opracowanie w przypadku inspekcji obiektów wysokich jak kominy lub wysokie budynki.",
-    imageSources: ["model3D_1.png", "model3D_2.jpg", "model3D_2.jpg", "model3D_4.jpg"],
+    imageSources: ["model3D_1.png", "model3D_2.jpg", "model3D_3.jpg", "model3D_4.jpg"],
   }
   const categoriesChmuryPunktów = {
     title: "Chmury punktów",
@@ -70,6 +71,7 @@ export default function Home() {
         <Categories {...categoriesDokumentacjaGIS} />
         <Categories {...categoriesZdjeciaIFilmy} />
         </div>
+        <Footer />
     </main>
   )
 }

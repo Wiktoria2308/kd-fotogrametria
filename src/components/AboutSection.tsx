@@ -8,7 +8,7 @@ import { FaRulerCombined } from "react-icons/fa";
 const AboutSection: React.FC = () => {
 
     return (
-        <div className="pb-24 pt-10">
+        <div className="pb-24 pt-10" id="about">
         <div className='text-[1.3rem] md:text-[1.7rem] pb-20 md:pb-0 text-center'>
             <p className='leading-[3rem] font-regular px-4 md:px-[10rem] text-black'>
             KD Fotogrametria powstała z pasji i chęci tworzenia. 
