@@ -101,11 +101,14 @@ export default function Home() {
     <main className="flex flex-col text-black ">
         <div className="bg-hero-pattern bg-cover bg-no-repeat">
           <div className="backdrop-grayscale-0 bg-white/45">
+            <div className="2xl:px-[20rem]">
         <Hero />
         <AboutSection />
         </div>
         </div>
-        <div className="bg-gradient-to-r from-black via-zinc-600 to-zinc-300">
+        </div>
+        <div className="bg-gradient-to-r from-black via-zinc-700 to-zinc-400">
+          <div className="2xl:px-[20rem]">
         <Categories {...categoriesOrtofotomapy} />
         <Categories {...categoriesModele3D} />
         <Categories {...categoriesChmuryPunktów} />
@@ -115,6 +118,7 @@ export default function Home() {
         <Categories {...categoriesPrzekroje} />
         <Categories {...categoriesDokumentacjaGIS} />
         <Categories {...categoriesZdjeciaIFilmy} />
+        </div>
         </div>
         <Footer />
     </main>

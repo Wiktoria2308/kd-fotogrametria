@@ -8,14 +8,14 @@ const Hero: React.FC = () => {
         <div>
             <Navbar />
             <div className="w-full pt-6 pb-2 px-4 md:px-10 flex flex-col md:flex-row">
-                <div className='basis-1/2 mb-6 md:mb-0'>
+                <div className='basis-1/2 mb-10 md:mb-0'>
 
                     <Link href="/">
                         <img src="/logo.png" className="max-h-[20rem]" alt="Logo" />
                     </Link>
                 </div>
                 <div className='basis-1/2'>
-                    <ul className="font-regular md:font-medium flex flex-col p-1 space-y-[0.9rem] md:space-y-4 rtl:space-x-reverse mt-0 text-right text-[1.5rem] md:text-[1.6rem] leading-8">
+                    <ul className="font-semibold flex flex-col p-1 space-y-[0.9rem] md:space-y-4 rtl:space-x-reverse mt-0 text-right text-[1.3rem] md:text-[1.4rem] lg:text-[1.6rem] leading-8">
                         <li>
                             <a href="#Ortofotomapy" className='hover:text-neutral-700 text-neutral-900' aria-current="page">Ortofotomapy</a>
                         </li>
@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
                     </ul>
                 </div>
             </div>
-            <div className='pt-16 md:pt-12 px-4 md:px-16 text-[1.3rem] md:text-[1.7rem] pb-20 md:pb-0 text-center text-neutral-800'>
+            <div className='pt-16 md:pt-12 px-4 md:px-16 text-[1.3rem] md:text-[1.7rem] pb-5 md:pb-0 text-center text-neutral-800'>
                 <p className='leading-[3rem] text-black'>
                     KD Fotogrametria to nie zwykłe latanie dronem.
                     To profesjonalne opracowania pomiarowe dla Ciebie i Twojej branży.
