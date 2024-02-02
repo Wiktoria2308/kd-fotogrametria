@@ -1,4 +1,7 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
+
+import ImageModal from './ImageModal';
 
 interface CategoriesProps {
   title: string;
@@ -7,6 +10,17 @@ interface CategoriesProps {
 }
 
 const Categories: React.FC<CategoriesProps> = ({ title, description, mediaSources }) => {
+
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const openImageModal = (imageUrl: string) => {
+    setSelectedImage(imageUrl);
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div id={title} className="flex flex-col lg:flex-row items-center justify-center px-4 md:px-0 lg:h-screen container mx-auto py-16 md:py-24 lg:py-36 2xl:py-52">
       <div className="lg:w-1/2 h-full flex flex-col px-5 md:px-10 lg:px-16 justify-center">
@@ -23,7 +37,7 @@ const Categories: React.FC<CategoriesProps> = ({ title, description, mediaSource
       <div className="lg:w-1/2 mt-8 lg:mt-0 h-1/2 md:h-full flex items-center">
         <div className="flex flex-wrap h-full">
           {mediaSources.map((media, index) => (
-            <div key={index} className="w-full md:w-1/2 h-1/2 overflow-hidden p-3">
+            <div key={index} className="w-full md:w-1/2 h-1/2 overflow-hidden p-3 cursor-pointer" onClick={() => openImageModal(media.source)}>
               {media.type === 'image' ? (
                 <img src={media.source} alt={`Category ${index + 1} for ${title}`} className="w-full h-full object-cover" />
               ) : media.type === 'video' ? (
@@ -35,7 +49,11 @@ const Categories: React.FC<CategoriesProps> = ({ title, description, mediaSource
             </div>
           ))}
         </div>
+        {selectedImage && (
+        <ImageModal imageUrl={selectedImage} closeModal={closeImageModal} />
+      )}
       </div>
+      
     </div>
   );
 };
