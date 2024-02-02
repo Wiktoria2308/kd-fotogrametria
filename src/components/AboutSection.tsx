@@ -8,7 +8,7 @@ import { FaRulerCombined } from "react-icons/fa";
 const AboutSection: React.FC = () => {
 
     return (
-        <div className="pb-24 pt-10" id="about">
+        <div className="container mx-auto md:h-screen lg:flex lg:flex-col lg:justify-center lg:items-center" id="about">
         <div className='text-[1.3rem] md:text-[1.7rem] pb-5 md:pb-0 text-center'>
             <p className='leading-[3rem] font-regular px-4 md:px-[5rem] lg:px-[10rem] text-black'>
             KD Fotogrametria powstała z pasji i chęci tworzenia. 
@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
             </p>
             <p className="pt-14 font-medium">Współpraca z KD Fotogrametria to:</p>
         </div>
-        <div className="px-4 md:px-12 lg:px-16 pt-10 md:pt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="px-4 lg:px-16 pt-10 md:pt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             <div className="mb-10 md:mb-0">
             <img src="clock.png" alt="clock icon" className="mx-auto mb-10"/>
             <p className="font-semibold text-center text-[1.45rem]">Krótkie terminy realizacji</p>
