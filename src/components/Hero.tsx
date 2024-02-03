@@ -86,7 +86,7 @@ const Hero: React.FC = () => {
             </div>
             <div className='pt-16 md:pt-0 px-4 md:px-16 text-[1.3rem] md:text-[1.7rem] pb-5 md:pb-10 2xl:pb-36 text-center text-neutral-800 md:mt-[30%] lg:mt-auto'>
                 <p className='leading-[3rem] text-black xl:text-[2rem]'>
-                    KD Fotogrametria to nie zwykłe latanie dronem.
+                    KD Fotogrametria to niezwykłe latanie dronem.
                     To profesjonalne opracowania pomiarowe dla Ciebie i Twojej branży.
                     Optymalizuj swoją pracę dzięki opracowaniom fotogrametrii niskiego pułapu.
                 </p>

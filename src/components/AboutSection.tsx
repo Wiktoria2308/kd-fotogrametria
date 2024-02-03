@@ -31,7 +31,7 @@ const AboutSection: React.FC = () => {
             <div className="mb-10 md:mb-0">
             <img src="tools.png" alt="tools icon" className="mx-auto mb-10"/>
             <p className="font-semibold text-center text-[1.45rem]">Fachowość</p>
-            <p className="text-center pt-5 text-[1.4rem] font-regular">Wykształcenie, doświadczenie, najwyższej jakości sprzęt pomiarowy oraz praca na najwyższej jakości oprogramowaniu</p>
+            <p className="text-center pt-5 text-[1.4rem] font-regular">Wykształcenie, doświadczenie, najwyższej klasy sprzęt pomiarowy oraz praca na dedykowanych programach</p>
             </div>
             <div className="mb-10 md:mb-0">
             <img src="hands.png" alt="partnership icon" className="mx-auto mb-10"/>
