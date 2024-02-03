@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from 'react';
-
 import ImageModal from './ImageModal';
 
 interface CategoriesProps {
@@ -29,7 +28,7 @@ const Categories: React.FC<CategoriesProps> = ({ title, description, mediaSource
           <p className="text-lg md:text-xl/9 2xl:text-2xl/10 font-light text-left lg:text-center">{description}</p>
         </div>
         <a href="#footer" className='cursor-pointer mt-10'>
-          <div className="bg-black hover:bg-zinc-900 hover:border text-white py-2 text-center">
+          <div className="bg-black hover:bg-zinc-900 hover:border text-white py-2 text-center ">
             <button className="w-full text-2xl font-light">Kontakt</button>
           </div>
         </a>
@@ -37,9 +36,9 @@ const Categories: React.FC<CategoriesProps> = ({ title, description, mediaSource
       <div className="lg:w-1/2 mt-8 lg:mt-0 h-1/2 md:h-full flex items-center">
         <div className="flex flex-wrap h-full">
           {mediaSources.map((media, index) => (
-            <div key={index} className="w-full md:w-1/2 h-1/2 overflow-hidden p-3 cursor-pointer" onClick={() => openImageModal(media.source)}>
+            <div key={index} className="w-full md:w-1/2 h-[350px] lg:h-1/2 overflow-hidden p-3" onClick={() => openImageModal(media.source)}>
               {media.type === 'image' ? (
-                <img src={media.source} alt={`Category ${index + 1} for ${title}`} className="w-full h-full object-cover" />
+                <img src={media.source} alt={`Category ${index + 1} for ${title}`} className="w-full h-full object-cover hover:cursor-zoom-in shadow-md" />
               ) : media.type === 'video' ? (
                 <video controls className="w-full h-full object-cover">
                   <source src={media.source} type="video/mp4" />
