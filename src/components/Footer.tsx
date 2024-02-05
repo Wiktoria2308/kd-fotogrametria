@@ -59,9 +59,9 @@ const Footer: React.FC = () => {
                         <div className="flex flex-col mb-14 md:mb-0">
                             <div className="space-y-2 md:space-y-1 self-center ">
                                 <p className='font-medium text-[1.4rem] md:text-[1.6rem] text-center md:text-start'>Karolina Dobrzewińska</p>
-                                <div className='flex'>
+                                <div className='flex justify-center md:justify-start'>
                                     <BsGeoAlt className='self-center text-lg' />
-                                    <p className='text-base md:text-lg pl-2'>Szkolna 27, 84-123 Połchowo, Pomorskie</p>
+                                    <p className='text-base md:text-lg pl-2 w-max'>Szkolna 27, 84-123 Połchowo, Pomorskie</p>
                                 </div>
                                 <p className='text-base md:text-lg text-center md:text-start'><span className='font-medium'>NIP</span> 5871741423 <span className='font-medium pl-2'>REGON</span> 525775750</p>
                             </div>
@@ -76,13 +76,15 @@ const Footer: React.FC = () => {
                                     <PiEnvelopeLight className='self-center text-2xl' />
                                     <p className='text-xl md:text-2xl pl-3'>kdfotogrametria@gmail.com</p>
                                 </div>
-                                <div className='flex justify-center md:justify-start'>
+                                <div className='flex flex-col md:flex-row'>
+                                    <div className='flex justify-center mb-1 md:mb-0'>
                                     <a href="https://www.facebook.com/profile.php?id=100093544128388" className='cursor-pointer self-center' target="_blank" rel="noopener noreferrer">
                                         <FaFacebook className='text-2xl' />
                                     </a>
                                     <a href="https://www.linkedin.com/company/kd-fotogrametria/" className='cursor-pointer self-center' target="_blank" rel="noopener noreferrer">
                                         <CiLinkedin className=' text-[2.5rem] pl-2' />
                                     </a>
+                                    </div>
                                     <p className='pl-3 self-center text-sm md:text-base w-max'>Karolina Dobrzewińska / KD Fotogrametria</p>
                                 </div>
 

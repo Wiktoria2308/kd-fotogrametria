@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
                         </li>
                     </ul>
                     {isOpen && (
-                        <ul className="flex flex-col p-5 space-y-[0.9rem] md:space-y-4 rtl:space-x-reverse mt-0 text-right text-[1.2rem] md:text-[1.4rem] lg:text-[1.6rem] leading-8 bg-zinc-200 rounded-md">
+                        <ul className="flex flex-col py-5 pr-5 space-y-[0.9rem] md:space-y-4 rtl:space-x-reverse mt-0 text-right text-[1.1rem] md:text-[1.4rem] lg:text-[1.6rem] leading-8 bg-zinc-200 rounded-md">
                             <li>
                                 <a href="#Ortofotomapy" className='hover:text-black text-neutral-900 font-medium hover:font-semibold' aria-current="page">Ortofotomapy</a>
                             </li>
