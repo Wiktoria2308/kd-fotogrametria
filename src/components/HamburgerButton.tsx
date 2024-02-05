@@ -10,7 +10,7 @@ const HamburgerButton: React.FC<HamburgerButtonProps> = ({ isOpen, setIsOpen }) 
 
   return (
     <button
-      className="flex flex-col h-12 w-12 justify-center items-center group ml-auto"
+      className="flex flex-col h-12 w-12 justify-center items-center group ml-auto absolute right-3 top-4"
       onClick={() => setIsOpen(!isOpen)}
     >
       <div

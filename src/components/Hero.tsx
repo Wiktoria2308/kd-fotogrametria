@@ -11,16 +11,16 @@ const Hero: React.FC = () => {
     return (
         <div className='container mx-auto min-h-screen flex flex-col'>
             <Navbar />
-            <div className="w-full pt-12 pb-2 px-4 md:px-0 flex flex-col md:flex-row">
+            <div className="w-full px-4 md:px-0 flex flex-col md:flex-row relative">
                 <div className='basis-1/2 mb-5 md:mb-0'>
 
                     <Link href="/" className='cursor-default'>
-                        <img src="/logo.png" className="max-h-[20rem] cursor-pointer" alt="Logo"></img>
+                        <img src="/logo.png" className="max-h-[5rem] md:max-h-[20rem] cursor-pointer" alt="Logo"></img>
                     </Link>
                 </div>
                 <div className='basis-1/2'>
                     <div className='md:hidden'>
-                        <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
+                        <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen}/>
                     </div>
                     <ul className="flex flex-col p-1 space-y-[0.9rem] md:space-y-4 rtl:space-x-reverse mt-0 text-right text-[1.3rem] md:text-[1.4rem] lg:text-[1.6rem] leading-8 hidden md:block">
                         <li>
@@ -84,8 +84,8 @@ const Hero: React.FC = () => {
                     )}
                 </div>
             </div>
-            <div className='pt-16 md:pt-0 px-4 md:px-16 text-[1.3rem] md:text-[1.7rem] pb-5 md:pb-10 2xl:pb-36 text-center text-neutral-800 md:mt-[30%] lg:mt-auto'>
-                <p className='leading-[3rem] text-black xl:text-[2rem]'>
+            <div className='md:pt-0 px-4 md:px-16 pb-5 md:pb-10 2xl:pb-36 text-center text-neutral-800 mt-[30%] lg:mt-auto'>
+                <p className='leading-[3rem] text-black text-[1.3rem] md:text-[1.7rem] lg:text-[1.8rem] xl:text-[1.9rem]'>
                     KD Fotogrametria to niezwykłe latanie dronem.
                     To profesjonalne opracowania pomiarowe dla Ciebie i Twojej branży.
                     Optymalizuj swoją pracę dzięki opracowaniom fotogrametrii niskiego pułapu.
