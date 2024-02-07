@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
         <footer className='bg-hero-pattern bg-cover bg-no-repeat relative' id='footer'>
             <div className="backdrop-grayscale-0 bg-white/45">
 
-                <div className="container mx-auto py-24">
+                <div className="lg:container mx-auto py-24">
                     <div
                         id="scroll-to-top"
                         className={`absolute bg-zinc-800 text-white cursor-pointer text-[2.5rem] p-2 top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${showScrollToTop ? "show" : ""
@@ -47,17 +47,17 @@ const Footer: React.FC = () => {
                         <HiChevronDoubleUp className="absolute bg-zinc-800 text-white cursor-pointer text-[2.5rem] p-2 top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
 
                     </div>
-                    <div className="text-center mb-14 px-3 md:px-0">
-                        <p className="text-xl md:text-2xl font-regular">
+                    <div className="text-center mb-14 px-3 md:px-10 lg:px-0">
+                        <p className="text-xl lg:text-2xl font-regular">
                             Korzystaj z najnowszych rozwiązań w Twojej branży i zobacz świat z innej perspektywy.
                         </p>
                     </div>
                     <div className="text-center mb-10">
                         <h2 className="text-xl md:text-2xl font-medium md:font-semibold mb-4">Kontakt</h2>
                     </div>
-                    <div className="flex flex-col md:flex-row justify-between pb-14 lg:px-36 px-4 md:px-0">
-                        <div className="flex flex-col mb-14 md:mb-0">
-                            <div className="space-y-2 md:space-y-1 self-center ">
+                    <div className="flex flex-col xl:flex-row justify-between pb-14 lg:px-36 px-4 md:px-0">
+                        <div className="flex flex-col mb-14 xl:mb-0">
+                            <div className="space-y-2 md:space-y-1 self-center">
                                 <p className='font-medium text-[1.4rem] md:text-[1.6rem] text-center md:text-start'>Karolina Dobrzewińska</p>
                                 <div className='flex justify-center md:justify-start'>
                                     <BsGeoAlt className='self-center text-lg' />
@@ -91,13 +91,13 @@ const Footer: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col md:flex-row md:justify-between lg:px-36'>
+                    <div className='flex flex-col md:flex-row md:justify-between md:px-10 lg:px-36'>
                         <Link href="/" className='mb-10 md:mb-0 self-center md:self-start'>
-                            <img src="/logo.png" className="max-h-[5rem] md:max-h-[8rem]" alt="Logo" />
+                            <img src="/logo.png" className="max-h-[5rem] md:max-h-[7rem] lg:max-h-[8rem]" alt="Logo" />
                         </Link>
                         <div className="flex flex-row self-center md:self-start'">
-                            <img src="/qr_linkedin.jpg" alt="LinkedIn QR code" className="max-h-[5rem] md:max-h-[7rem] mr-5" />
-                            <img src="/qr_facebook.png" alt="Facebook QR code" className="max-h-[5rem] md:max-h-[7rem]" />
+                            <img src="/qr_linkedin.jpg" alt="LinkedIn QR code" className="max-h-[5rem] md:max-h-[6rem] lg:max-h-[7rem] mr-5" />
+                            <img src="/qr_facebook.png" alt="Facebook QR code" className="max-h-[5rem] md:max-h-[6rem] lg:max-h-[7rem]" />
                         </div>
                     </div>
                 </div>

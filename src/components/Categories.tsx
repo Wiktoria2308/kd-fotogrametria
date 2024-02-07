@@ -21,7 +21,7 @@ const Categories: React.FC<CategoriesProps> = ({ title, description, mediaSource
   };
 
   return (
-    <div id={title} className="flex flex-col lg:flex-row items-center justify-center px-4 md:px-0 lg:h-screen container mx-auto py-16 md:py-24 lg:py-36 2xl:py-52">
+    <div id={title} className="flex flex-col lg:flex-row items-center justify-center px-4 md:px-6 xl:px-0 lg:h-screen container mx-auto py-16 md:py-24 lg:py-36 2xl:py-52">
       <div className="lg:w-1/2 h-full flex flex-col px-5 md:px-10 lg:px-16 justify-center">
         <div className='text-white'>
           <h2 className="text-2xl md:text-3xl font-medium mb-10 text-center">{title}</h2>
@@ -33,10 +33,10 @@ const Categories: React.FC<CategoriesProps> = ({ title, description, mediaSource
           </div>
         </a>
       </div>
-      <div className="lg:w-1/2 mt-8 lg:mt-0 h-1/2 md:h-full flex items-center">
+      <div className="lg:w-1/2 mt-8 lg:mt-0 h-1/2 xl:h-full flex items-center">
         <div className="flex flex-wrap h-full">
           {mediaSources.map((media, index) => (
-            <div key={index} className="w-full md:w-1/2 h-[300px] lg:h-1/2 overflow-hidden p-5 md:p-3" onClick={() => openImageModal(media.source)}>
+            <div key={index} className="w-full md:w-1/2 h-[300px] xl:h-1/2 overflow-hidden p-5 md:p-3" onClick={() => openImageModal(media.source)}>
               {media.type === 'image' ? (
                 <img src={media.source} alt={`Category ${index + 1} for ${title}`} className="w-full h-full object-cover hover:cursor-zoom-in shadow-md" />
               ) : media.type === 'video' ? (

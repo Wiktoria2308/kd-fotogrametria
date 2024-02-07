@@ -98,6 +98,7 @@ html {
 }
 
 .modal-image {
+  background-color: #fff;
   max-height: 90vh;
   max-width: 100%;
   width: auto;
