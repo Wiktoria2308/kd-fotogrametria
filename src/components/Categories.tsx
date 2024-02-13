@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from 'react';
 import ImageModal from './ImageModal';
-import ImagesSlider from './ImagesSlider';
 
 interface CategoriesProps {
   title: string;
@@ -56,9 +55,7 @@ const Categories: React.FC<CategoriesProps> = ({ title, description, mediaSource
       </div>
      
     </div>
-     <div className="md:hidden">
-     {<ImagesSlider images={mediaSources} />}
-     </div>
+
      </div>
   );
 };
