@@ -118,3 +118,10 @@ width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+
+@media (min-width: 1280px) {
+  .custom-background {
+    background-position-y: 85%;
+  }
+}

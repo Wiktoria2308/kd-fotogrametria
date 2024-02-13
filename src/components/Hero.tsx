@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return (
-        <div className="bg-background1 bg-cover bg-center xl:bg-bottom bg-no-repeat min-h-screen relative">
+        <div className="bg-background1 bg-cover bg-center bg-no-repeat min-h-screen relative custom-background">
         <div className='px-4 md:px-10 xl:px-0 xl:container mx-auto'>
         <nav className="w-full flex flex-col md:flex-row relative mt-10 mb-0 md:mb-10">
             <div className='basis-1/2 mb-5 md:mb-0 md:mr-14 lg:mr-20 xl:mr-0'>
