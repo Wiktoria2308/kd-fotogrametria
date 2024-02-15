@@ -13,38 +13,38 @@ const Hero: React.FC = () => {
         <div className="bg-background1 bg-cover bg-center bg-no-repeat min-h-screen relative custom-background">
         <div className='px-4 md:px-10 xl:px-0 xl:container mx-auto'>
         <nav className="w-full flex flex-col md:flex-row relative mt-10 mb-0 md:mb-10">
-            <div className='basis-1/2 mb-5 md:mb-0 md:mr-14 lg:mr-20 xl:mr-0'>
+            <div className='basis-1/2 mb-5 md:mb-0 md:mr-14 lg:mr-20 xl:mr-0 xl:self-center xl:flex xl:justify-center'>
                 <Link href="/" className='cursor-default'>
-                    <img src="/logo.png" className="max-h-[5rem] md:max-h-[8rem] xl:max-h-[10rem] cursor-pointer" alt="Logo" />
+                    <img src="/logo.png" className="max-h-[5rem] md:max-h-[8rem] cursor-pointer" alt="Logo" />
                 </Link>
             </div>
-            <div className='basis-1/2 xl:mt-2'>
+            <div className='basis-1/2 xl:mt-2 '>
                 <div className='md:hidden'>
                     <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
                 </div>
-                <div className='flex flex-col md:space-y-8 lg:space-y-10 xl:space-y-16 hidden md:block'>
+                <div className='flex flex-col md:space-y-8 lg:space-y-10 xl:space-y-12 hidden md:block'>
                     <ul className="font-medium flex flex-row md:space-x-8 lg:space-x-16 rtl:space-x-reverse md:justify-end lg:justify-start">
                         <li>
-                            <a href="#about" className="line-style line-style-link md:text-base lg:text-lg xl:text-2xl" aria-current="page">O firmie</a>
+                            <a href="#about" className="line-style line-style-link md:text-base lg:text-lg xl:text-xl" aria-current="page">O firmie</a>
                         </li>
                         <li>
-                            <a href="#Ortofotomapy" className="line-style line-style-link md:text-base lg:text-lg xl:text-2xl" aria-current="page">Usługi</a>
+                            <a href="#Ortofotomapy" className="line-style line-style-link md:text-base lg:text-lg xl:text-xl" aria-current="page">Usługi</a>
                         </li>
                         <li>
-                            <a href="#footer" className="line-style line-style-link md:text-base lg:text-lg xl:text-2xl" aria-current="page">Realizacje</a>
+                            <a href="#footer" className="line-style line-style-link md:text-base lg:text-lg xl:text-xl" aria-current="page">Realizacje</a>
                         </li>
                         <li>
-                            <a href="#footer" className="line-style line-style-link md:text-base lg:text-lg xl:text-2xl" aria-current="page">Kontakt</a>
+                            <a href="#footer" className="line-style line-style-link md:text-base lg:text-lg xl:text-xl" aria-current="page">Kontakt</a>
                         </li>
                     </ul>
 
                     <div className='flex flex-row md:justify-end lg:justify-start'>
                         <div className='flex space-x-2 lg:space-x-5'>
                             <a href="https://www.facebook.com/profile.php?id=100093544128388" className='cursor-pointer self-center' target="_blank" rel="noopener noreferrer">
-                                <FaFacebook className='md:text-[1.6rem] lg:text-[1.9rem]' />
+                                <FaFacebook className='md:text-[1.6rem] lg:text-[1.7rem]' />
                             </a>
                             <a href="https://www.linkedin.com/company/kd-fotogrametria/" className='cursor-pointer self-center' target="_blank" rel="noopener noreferrer">
-                                <CiLinkedin className='md:text-[2.2rem] lg:text-[2.5rem]' />
+                                <CiLinkedin className='md:text-[2.2rem] lg:text-[2.3rem]' />
                             </a>
                         </div>
                         <p className='pl-2 lg:pl-5 self-center text-base md:text-base lg:text-xl w-max'>Karolina Dobrzewińska / KD Fotogrametria</p>

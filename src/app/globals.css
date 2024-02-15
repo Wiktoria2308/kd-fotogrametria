@@ -122,6 +122,6 @@ width: 100%;
 
 @media (min-width: 1280px) {
   .custom-background {
-    background-position-y: 85%;
+    background-position-y: 80%;
   }
 }
