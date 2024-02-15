@@ -70,8 +70,8 @@ const Hero: React.FC = () => {
             </div>
         </nav>
         {isOpen === false && (
-            <div className='absolute lg:static top-1/4 inset-x-0 lg:mt-16'>
-                <p className='text-black text-center text-[1.7rem] md:text-[1.7rem] lg:text-[2.5rem] xl:text-[2.8rem]'>
+            <div className='absolute lg:static top-1/4 inset-x-0 lg:mt-12 2xl:mt-16'>
+                <p className='text-black text-center text-[1.7rem] md:text-[1.7rem] lg:text-[2.3rem] 2xl:text-[2.8rem]'>
                     Witaj w świecie pomiarów innowacyjnych
                 </p>
             </div>

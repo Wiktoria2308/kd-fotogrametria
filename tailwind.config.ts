@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'background1': "url('/tlo_1_short.jpg')",
+        'background2': "url('/tlo_2.jpg')",
       },
     },
   },
