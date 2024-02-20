@@ -9,8 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'background1': "url('/tlo_1_short.jpg')",
-        'background2': "url('/tlo_2.jpg')",
+        'background1': "url('/background_1.jpg')",
+        'background2': "url('/background_2.jpg')",
+        'ortofotomapy': "url('/background_4.jpg')",
       },
     },
   },

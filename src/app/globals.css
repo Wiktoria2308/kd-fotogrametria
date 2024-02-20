@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-  font-family: 'MyFont';
-  src: url('/font/Gruppo/Gruppo-Regular.ttf') format('truetype');
-}
-
-body {
-  font-family: 'MyFont', sans-serif;
-} */
 
 html {
   scroll-behavior: smooth;
@@ -144,4 +136,17 @@ width: 100%;
   .custom-background {
     background-position-y: 70%;
   }
+}
+
+
+/* .Modele p, .Modele h2{
+  color: white;
+}
+.Modele .bg-blur-right {
+  background-color: transparent;
+} */
+
+.bg-blur-right {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
 }
