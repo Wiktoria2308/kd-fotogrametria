@@ -8,8 +8,6 @@ html {
   overflow-x: hidden;
 }
 
-
-
 .line-style {
   position: relative;
   white-space: nowrap;
@@ -57,33 +55,6 @@ html {
 }
 
 
-
-.modal-overlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1999;
-}
-
-.modal-content {
-  position: relative;
-  background-color: #fff;
-  max-width: 80%;
-  max-height: 100%;
-  overflow: auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 5px;
-}
-
 .close-button {
   position: absolute;
   top: 5px;
@@ -98,27 +69,6 @@ html {
   border-radius: 50%;
 }
 
-.modal-image {
-  background-color: #fff;
-  max-height: 90vh;
-  max-width: 100%;
-  width: auto;
-  padding: 35px;
-  cursor: default;
-}
-
-
-.carousel-card {
-height: 300px;
-width: 100%;
-}
-
-
-.carousel-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .custom-list-style {
   list-style-image: url('/drone_icon.png');
@@ -157,7 +107,6 @@ width: 100%;
 .Modele div {
   background-position: left;
 }
-
 
 .bg-blur-right {
   background-color: rgba(255, 255, 255, 0.4);
