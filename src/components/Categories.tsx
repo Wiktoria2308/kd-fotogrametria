@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface CategoriesProps {
   title: string;
@@ -9,10 +9,27 @@ interface CategoriesProps {
 
 const Categories: React.FC<CategoriesProps> = ({ title, description, image }) => {
 
+  const [isXlScreen, setIsXlScreen] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      const xlScreen = window.matchMedia("(min-width: 1280px)").matches;
+      setIsXlScreen(xlScreen);
+    };
+
+    checkScreenSize();
+
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => {
+      window.removeEventListener('resize', checkScreenSize);
+    };
+  }, []);
+
   return (
     <div className={`xl:relative h-full xl:min-h-screen mb-36 ${title}`} id={title}>
       <div className="xl:absolute xl:inset-0 bg-cover bg-center h-[300px] md:h-[500px] xl:h-full" style={{ backgroundImage: `url(${image})` }}></div>
-      <div className={`xl:inset-y-0 xl:right-0 xl:absolute w-full xl:w-[35%] ${window.innerWidth >= 1280 ? 'bg-blur-right' : 'bg-zinc-300'} flex flex-col xl:justify-center`}>
+      <div className={`xl:inset-y-0 xl:right-0 xl:absolute w-full xl:w-[35%] ${isXlScreen ? 'bg-blur-right' : 'bg-zinc-300'} flex flex-col xl:justify-center`}>
         <div className="text-black px-6 lg:px-10 py-10 lg:min-h-[unset] categories-info">
           <h2 className="text-xl md:text-xl lg:text-2xl 2xl:text-3xl font-medium mb-5 lg:mb-6 2xl:mb-10 text-center">{title}</h2>
           <div className="overflow-auto xl:max-h-[400px] 2xl:max-h-[unset] description">
