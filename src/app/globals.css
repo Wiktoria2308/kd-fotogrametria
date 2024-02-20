@@ -9,6 +9,7 @@ html {
 }
 
 
+
 .line-style {
   position: relative;
   white-space: nowrap;
@@ -137,16 +138,29 @@ width: 100%;
     background-position-y: 70%;
   }
 }
-
-
-/* .Modele p, .Modele h2{
-  color: white;
+@media (min-width: 1280px) and (min-height: 900px) {
+  .categories-info{
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+  }
+  .description {
+    max-height: none !important;
+  }
 }
-.Modele .bg-blur-right {
-  background-color: transparent;
-} */
+@media (min-width: 2000px) {
+  .categories-info{
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
+  }
+}
+
+.Modele div {
+  background-position: left;
+}
+
 
 .bg-blur-right {
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
 }
+

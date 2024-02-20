@@ -52,7 +52,7 @@ export default function Home() {
   }
 
   return (
-    <main className="flex flex-col text-black bg-stone-300">
+    <main className="flex flex-col text-black bg-zinc-200">
       <Hero />
       <AboutSection />
       <Categories {...categoriesOrtofotomapy} />
