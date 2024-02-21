@@ -28,7 +28,7 @@ export default function Home() {
   }
   const categoriesInspekcje = {
     title: "Inspekcje miejsc trudno dostępnych",
-    description: "z pomocą bezzałogowego statku powietrznego są bardzo przydatnym rozwiązaniem w przypadku obiektów niebezpiecznych, wysokich lub ciężko dostępnych dla ludzi. Najczęściej wykorzystywane są do kontroli stanu turbin wiatrowych, kominów, masztów TBS lub słupów energetycznych o wysokim napięciu. Takie rozwiązanie technologiczne pozwala na bezinwazyjne uzyskanie informacji o stanie infrastruktury, bez konieczności każdorazowego angażowania sprzętu wysokościowego oraz narażania zdrowia i życia osób pracujących na wysokościach.",
+    description: "z pomocą bezzałogowego statku powietrznego są bardzo przydatnym rozwiązaniem w przypadku obiektów niebezpiecznych, wysokich lub ciężko dostępnych dla ludzi. Najczęściej wykorzystywane są do kontroli stanu turbin wiatrowych, dachów, kominów przemysłowych, masztów TBS lub słupów energetycznych o wysokim napięciu. Takie rozwiązanie technologiczne pozwala na bezinwazyjne uzyskanie informacji o stanie infrastruktury, bez konieczności każdorazowego angażowania sprzętu wysokościowego oraz narażania zdrowia i życia osób pracujących na wysokościach.",
     image: 'background_8.jpg'
   }
   const categoriesPomiary = {
@@ -42,8 +42,8 @@ export default function Home() {
     image: 'background_10.png'
   }
   const categoriesDokumentacjaGIS = {
-    title: "Dokumentacja i opracowania GIS",
-    description: "prezentują wyniki badań i analiz przestrzennych wykonywanych na poszczególnych opracowaniach fotogrametrycznych. Do tej kategorii danych zaliczyć można przede wszystkim obliczenia powierzchni upraw rolnych zniszczonych w wyniku niekorzystnych warunków pogodowych lub działalności zwierząt. Dokumentacja w postaci ortofotomapy jest podstawą do graficznej prezentacji uszkodzenia. Dane fotogrametryczne można z powodzeniem łączyć z innymi danymi przestrzennymi takimi jak na przykład granice działek ewidencyjnych czy budynki ewidencyjne.",
+    title: "Analizy przestrzenne",
+    description: "prezentują wyniki badań i obliczeń wykonywanych na poszczególnych opracowaniach fotogrametrycznych. Do tej kategorii danych zaliczyć można przede wszystkim obliczenia powierzchni upraw rolnych zniszczonych w wyniku niekorzystnych warunków pogodowych lub działalności zwierząt. Dokumentacja w postaci ortofotomapy jest podstawą do graficznej prezentacji uszkodzenia. Dane fotogrametryczne można z powodzeniem łączyć z innymi danymi przestrzennymi takimi jak na przykład granice działek ewidencyjnych czy budynki ewidencyjne. ",
     image: 'background_11.jpg'
   }
   const categoriesZdjeciaIFilmy = {

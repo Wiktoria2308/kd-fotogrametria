@@ -12,31 +12,31 @@ const AboutSection: React.FC = () => {
                         <p className="px-4 md:px-0 mb-10 lg:mb-6 2xl:mb-10 font-medium text-xl md:text-2xl lg:text-[1.4rem] 2xl:text-[1.8rem]">Korzyści płynące z opracowań fotogrametrycznych:</p>
                         <ul className="space-y-4 lg:space-y-3 2xl:space-y-5 text-left lg:text-center">
                             <li className="flex md:inline-block items-start">
-                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden" />
+                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[9%]" />
                                 <p className="text-lg lg:text-[1.2rem] 2xl:text-[1.6rem] leading-8 lg:leading-normal">
                                     Wysoka rozdzielczość - opracowania o rozdzielczości nawet poniżej 1 centymetra
                                 </p>
                             </li>
                             <li className="flex md:inline-block items-start">
-                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden" />
+                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[9%]" />
                                 <p className="text-lg lg:text-[1.2rem] 2xl:text-[1.6rem] leading-8 lg:leading-normal">
                                 Kompatybilność z innym oprogramowaniem - pliki można otwierać w programach typu CAD 
                                 </p>
                             </li>
                             <li className="flex md:inline-block items-start">
-                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden" />
+                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[9%]" />
                                 <p className="text-lg lg:text-[1.2rem] 2xl:text-[1.6rem] leading-8 lg:leading-normal">
                                 Bezinwazyjność pomiaru - podczas wykonywania pomiaru nie trzeba wstrzymywać prac na danym obiekcie
                                 </p>
                             </li>
                             <li className="flex md:inline-block items-start">
-                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden" />
+                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[9%]" />
                                 <p className="text-lg lg:text-[1.2rem] 2xl:text-[1.6rem] leading-8 lg:leading-normal">
                                 Wysoka jakość opracowań, realistyczne odwzorowanie kolorów, kształtów i faktur
                                 </p>
                             </li>
                             <li className="flex md:inline-block items-start">
-                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden" />
+                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[9%]" />
                                 <p className="text-lg lg:text-[1.2rem] 2xl:text-[1.6rem] leading-8 lg:leading-normal">
                                 Możliwość realizacji nalotów dla wybranego obszaru, jednorazowo lub cyklicznie 
                                 </p>
@@ -44,7 +44,7 @@ const AboutSection: React.FC = () => {
                         </ul>
                         <p className="pt-14 lg:pt-8 2xl:pt-14 px-4 md:px-0 font-medium text-xl md:text-2xl lg:text-[1.4rem] 2xl:text-[1.8rem]">Współpraca z KD Fotogrametria to:</p>
                     </div>
-                    <div className="px-4 lg:px-0 pt-10 md:pt-12 2xl:pt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <div className="px-4 lg:px-0 pt-10 md:pt-12 2xl:pt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:gap-6">
                         <div className="mb-10 md:mb-0">
                             <img src="clock.png" alt="clock icon" className="mx-auto mb-10 lg:mb-5 2xl:mb-10 w-1/5 md:w-1/3 lg:w-1/4 2xl:w-auto" />
                             <p className="font-semibold text-center text-xl lg:text-[1.2rem] 2xl:text-[1.6rem] md:h-[3.5rem] lg:h-[1.5rem] 2xl:h-[2.5rem]">Krótkie terminy realizacji</p>

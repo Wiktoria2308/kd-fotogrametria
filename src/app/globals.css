@@ -93,9 +93,9 @@ html {
     padding-left: 3.5rem !important;
     padding-right: 3.5rem !important;
   }
-  .description {
+  /* .description {
     max-height: none !important;
-  }
+  } */
 }
 @media (min-width: 2000px) {
   .categories-info{
