@@ -12,31 +12,31 @@ const AboutSection: React.FC = () => {
                         <p className="px-4 md:px-0 mb-10 lg:mb-6 2xl:mb-10 font-medium text-xl md:text-2xl lg:text-[1.4rem] 2xl:text-[1.8rem]">Korzyści płynące z opracowań fotogrametrycznych:</p>
                         <ul className="space-y-4 lg:space-y-3 2xl:space-y-5 text-left lg:text-center">
                             <li className="flex md:inline-block items-start">
-                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[9%]" />
+                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[8%]" />
                                 <p className="text-lg lg:text-[1.2rem] 2xl:text-[1.6rem] leading-8 lg:leading-normal">
                                     Wysoka rozdzielczość - opracowania o rozdzielczości nawet poniżej 1 centymetra
                                 </p>
                             </li>
                             <li className="flex md:inline-block items-start">
-                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[9%]" />
+                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[8%]" />
                                 <p className="text-lg lg:text-[1.2rem] 2xl:text-[1.6rem] leading-8 lg:leading-normal">
                                 Kompatybilność z innym oprogramowaniem - pliki można otwierać w programach typu CAD 
                                 </p>
                             </li>
                             <li className="flex md:inline-block items-start">
-                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[9%]" />
+                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[8%]" />
                                 <p className="text-lg lg:text-[1.2rem] 2xl:text-[1.6rem] leading-8 lg:leading-normal">
                                 Bezinwazyjność pomiaru - podczas wykonywania pomiaru nie trzeba wstrzymywać prac na danym obiekcie
                                 </p>
                             </li>
                             <li className="flex md:inline-block items-start">
-                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[9%]" />
+                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[8%]" />
                                 <p className="text-lg lg:text-[1.2rem] 2xl:text-[1.6rem] leading-8 lg:leading-normal">
                                 Wysoka jakość opracowań, realistyczne odwzorowanie kolorów, kształtów i faktur
                                 </p>
                             </li>
                             <li className="flex md:inline-block items-start">
-                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[9%]" />
+                                <img src="drone_icon.png" alt="drone icon" className="mr-3 mt-1 md:hidden w-[8%]" />
                                 <p className="text-lg lg:text-[1.2rem] 2xl:text-[1.6rem] leading-8 lg:leading-normal">
                                 Możliwość realizacji nalotów dla wybranego obszaru, jednorazowo lub cyklicznie 
                                 </p>

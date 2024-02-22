@@ -93,9 +93,6 @@ html {
     padding-left: 3.5rem !important;
     padding-right: 3.5rem !important;
   }
-  /* .description {
-    max-height: none !important;
-  } */
 }
 @media (min-width: 2000px) {
   .categories-info{
@@ -113,3 +110,9 @@ html {
   backdrop-filter: blur(10px);
 }
 
+
+.dropdown-uslugi {
+  border-radius: 0!important;
+  border-width: 0 3px 0 0!important;
+  border-style: solid!important;
+}

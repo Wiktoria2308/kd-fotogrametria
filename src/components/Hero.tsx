@@ -4,19 +4,24 @@ import Link from 'next/link'
 import HamburgerButton from './HamburgerButton';
 import { FaFacebook } from "react-icons/fa6";
 import { CiLinkedin } from "react-icons/ci";
-import { SlArrowDown } from 'react-icons/sl';
+import { SlArrowDown, SlArrowUp } from 'react-icons/sl';
+import DropdownItem from './DropdownItem';
 
 const Hero: React.FC = () => {
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
-
+    const [isArrowUp, setIsArrowUp] = useState<boolean>(false);
     const [isOpenDropdown, setIsOpenDropdown] = useState(false);
+    const [isArrowUpMobile, setIsArrowUpMobile] = useState<boolean>(false);
+    const [isOpenDropdownMobile, setIsOpenDropdownMobile] = useState(false);
     const dropdownRef = useRef<HTMLUListElement>(null);
+    const dropdownRefMobile = useRef<HTMLUListElement>(null);
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
                 setIsOpenDropdown(false);
+                setIsArrowUp(false);
             }
         }
 
@@ -26,8 +31,28 @@ const Hero: React.FC = () => {
         };
     }, []);
 
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+            if (dropdownRefMobile.current && !dropdownRefMobile.current.contains(event.target as Node)) {
+                setIsOpenDropdownMobile(false);
+                setIsArrowUpMobile(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+   
     const toggleDropdown = () => {
-        setIsOpenDropdown(!isOpenDropdown);
+        setIsOpenDropdown(prevState => !prevState);
+        setIsArrowUp(prevState => !prevState);
+    };
+
+    const toggleDropdownMobile = () => {
+        setIsOpenDropdownMobile(prevState => !prevState);
+        setIsArrowUpMobile(prevState => !prevState);
     };
 
     return (
@@ -44,46 +69,30 @@ const Hero: React.FC = () => {
                             <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
                         </div>
                         <div className='flex flex-col md:space-y-8 lg:space-y-10 xl:space-y-12 hidden md:block'>
-                            <ul ref={dropdownRef} className="font-medium flex flex-row md:space-x-8 lg:space-x-16 rtl:space-x-reverse md:justify-end lg:justify-start">
+                            <ul className="font-medium flex flex-row md:space-x-8 lg:space-x-16 rtl:space-x-reverse md:justify-end lg:justify-start">
                                 <li>
                                     <a href="#about" className="line-style line-style-link md:text-base lg:text-lg xl:text-xl" aria-current="page">O firmie</a>
                                 </li>
-
-                                <li className='relative' onClick={toggleDropdown}>
-                                    <div className='line-style line-style-link flex flex-row cursor-pointer'>
+                                <li className='relative'>
+                                    <div className='line-style line-style-link flex flex-row cursor-pointer' onClick={toggleDropdown}>
                                         <p className="md:text-base lg:text-lg xl:text-xl" aria-current="page">Usługi</p>
                                         <div className="pl-[5px] self-center">
-                                            <SlArrowDown />
+                                            {isArrowUp ? <SlArrowUp /> : <SlArrowDown />}
                                         </div>
                                     </div>
-                                    <ul className={`absolute top-full left-0  ${isOpenDropdown ? '' : 'hidden'} bg-white shadow-2xl rounded-md py-6 text-left pl-5 space-y-4 min-w-72 z-10`}>
-                                        <li>
-                                            <a href="#Ortofotomapy" className="text-lg">Ortofotomapy</a>
-                                        </li>
-                                        <li>
-                                            <a href="#Modele 3D" className="text-lg">Modele 3D</a>
-                                        </li>
-                                        <li>
-                                            <a href="#Chmury punktów" className="text-lg">Chmury punktów</a>
-                                        </li>
-                                        <li>
-                                            <a href="#Monitoring w czasie" className="text-lg">Monitoring w czasie</a>
-                                        </li>
-                                        <li>
-                                            <a href="#Inspekcje miejsc trudno dostępnych" className="text-lg">Inspekcje miejsc trudno dostępnych</a>
-                                        </li>
-                                        <li>
-                                            <a href="#Pomiary mas ziemnych" className="text-lg">Pomiary mas ziemnych</a>
-                                        </li>
-                                        <li>
-                                            <a href="#Przekroje poprzeczne i podłużne " className="text-lg">Przekroje poprzeczne i podłużne </a>
-                                        </li>
-                                        <li>
-                                            <a href="#Analizy przestrzenne" className="text-lg">Analizy przestrzenne</a>
-                                        </li>
-                                        <li>
-                                            <a href="#Zdjęcia i filmy " className="text-lg">Zdjęcia i filmy </a>
-                                        </li>
+                                    <ul ref={dropdownRef}
+                                        className={`absolute top-full left-0 ${isOpenDropdown ? 'opacity-100' : 'opacity-0 invisible'} transition-all duration-300 bg-white shadow-2xl rounded-md py-6 text-left pl-5 space-y-4 min-w-72 z-10`}
+                                        >
+                                        <DropdownItem href="#Ortofotomapy">Ortofotomapy</DropdownItem>
+                                        <DropdownItem href="#Modele 3D">Modele 3D</DropdownItem>
+                                        <DropdownItem href="#Chmury punktów">Chmury punktów</DropdownItem>
+                                        <DropdownItem href="#Monitoring w czasie">Monitoring w czasie</DropdownItem>
+                                        <DropdownItem href="#Inspekcje miejsc trudno dostępnych">Inspekcje miejsc trudno dostępnych</DropdownItem>
+                                        <DropdownItem href="#Pomiary mas ziemnych">Pomiary mas ziemnych</DropdownItem>
+                                        <DropdownItem href="#Przekroje poprzeczne i podłużne">Przekroje poprzeczne i podłużne</DropdownItem>
+                                        <DropdownItem href="#Analizy przestrzenne">Analizy przestrzenne</DropdownItem>
+                                        <DropdownItem href="#Zdjęcia i filmy">Zdjęcia i filmy</DropdownItem>
+
                                     </ul>
                                 </li>
                                 <li>
@@ -107,18 +116,37 @@ const Hero: React.FC = () => {
                             </div>
                         </div>
                         {isOpen && (
-                            <ul className="flex flex-col py-5 pr-5 space-y-4 rtl:space-x-reverse mt-0 text-right bg-orange-50 rounded-md">
+                            <ul ref={dropdownRefMobile} className="flex flex-col py-5 space-y-4 rtl:space-x-reverse mt-0 text-right bg-orange-50 rounded-md">
                                 <li>
-                                    <a href="#about" className="text-xl" aria-current="page">O firmie</a>
+                                    <a href="#about" className="text-xl pr-5" aria-current="page">O firmie</a>
+                                </li>
+                                <li className="">
+                                    <div className='flex flex-row cursor-pointer justify-end pr-5' onClick={toggleDropdownMobile}>
+                                        <p className="text-xl" aria-current="page">Usługi</p>
+                                        <div className="pl-[5px] self-center">
+                                            {isArrowUpMobile ? <SlArrowUp /> : <SlArrowDown />}
+                                        </div>
+                                    </div>
+                                   
+                                    <ul
+                                        className={`dropdown-uslugi ${isOpenDropdownMobile === false ? 'hidden' : 'block'} rounded-md py-3 my-3 text-right pr-5 bg-white border-orange-200 space-y-4 min-w-72`}>
+                                        <DropdownItem href="#Ortofotomapy">Ortofotomapy</DropdownItem>
+                                        <DropdownItem href="#Modele 3D">Modele 3D</DropdownItem>
+                                        <DropdownItem href="#Chmury punktów">Chmury punktów</DropdownItem>
+                                        <DropdownItem href="#Monitoring w czasie">Monitoring w czasie</DropdownItem>
+                                        <DropdownItem href="#Inspekcje miejsc trudno dostępnych">Inspekcje miejsc trudno dostępnych</DropdownItem>
+                                        <DropdownItem href="#Pomiary mas ziemnych">Pomiary mas ziemnych</DropdownItem>
+                                        <DropdownItem href="#Przekroje poprzeczne i podłużne">Przekroje poprzeczne i podłużne</DropdownItem>
+                                        <DropdownItem href="#Analizy przestrzenne">Analizy przestrzenne</DropdownItem>
+                                        <DropdownItem href="#Zdjęcia i filmy">Zdjęcia i filmy</DropdownItem>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#footer" className="text-xl pr-5" aria-current="page">Realizacje</a>
                                 </li>
                                 <li>
-                                    <a href="#Ortofotomapy" className="text-xl" aria-current="page">Usługi</a>
-                                </li>
-                                <li>
-                                    <a href="#footer" className="text-xl" aria-current="page">Realizacje</a>
-                                </li>
-                                <li>
-                                    <a href="#footer" className="text-xl" aria-current="page">Kontakt</a>
+                                    <a href="#footer" className="text-xl pr-5" aria-current="page">Kontakt</a>
                                 </li>
                             </ul>
                         )}
