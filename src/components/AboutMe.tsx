@@ -21,7 +21,7 @@ const AboutMe: React.FC = () => {
                                 <p className="px-4 md:px-0 mb-10 lg:mb-3 2xl:mb-6 text-lg lg:text-[1.2rem] 2xl:text-[1.5rem] leading-8 lg:leading-normal">
                                     Opracowania fotogrametryczne, które wykonuję z powodzeniem wykorzystuje się w branżach takich jak:
                                 </p>
-                                <ul className="list-disc space-y-4 lg:space-y-2 2xl:space-y-3 pl-8 lg:pl-6">
+                                <ul className="space-y-4 lg:space-y-2 2xl:space-y-3 pl-8 lg:pl-6 list-industries">
                                     <li><p className="text-lg lg:text-[1.2rem] 2xl:text-[1.5rem] leading-8 lg:leading-normal">geodezja</p></li>
                                     <li><p className="text-lg lg:text-[1.2rem] 2xl:text-[1.5rem] leading-8 lg:leading-normal">rolnictwo</p></li>
                                     <li><p className="text-lg lg:text-[1.2rem] 2xl:text-[1.5rem] leading-8 lg:leading-normal">budownictwo</p></li>
