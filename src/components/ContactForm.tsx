@@ -76,22 +76,22 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="rounded-sm backdrop-blur-xl xl:backdrop-blur-none bg-white/50 xl:bg-transparent py-10 xl:py-0 px-5 md:px-10 xl:px-0 w-[95%] md:w-2/3 xl:w-full mx-auto xl:mx-[unset]" id="contact">
+    <div className="contact-form rounded-sm backdrop-blur-xl xl:backdrop-blur-none bg-white/50 xl:bg-transparent py-10 xl:py-0 px-5 md:px-10 xl:px-0 w-[95%] md:w-2/3 xl:w-full mx-auto xl:mx-0" id="contact">
       <form
         id="contact-form"
-        className="max-w-md mx-auto"
+        className="max-w-md mx-auto 2xl:max-w-2xl"
         onSubmit={handleSubmit}
         noValidate
       >
-        <div className="mb-4">
-          <label htmlFor="user_name" className="block text-lg mb-1">
+        <div className="mb-4 2xl:mb-6">
+          <label htmlFor="user_name" className="block text-lg 2xl:text-2xl mb-1">
             Imię
           </label>
           <input
             type="text"
             name="user_name"
             id="user_name"
-            className={`w-full border border-gray-300 rounded-sm p-2 text-lg focus:outline-none ${
+            className={`w-full border border-gray-300 rounded-sm p-2 text-lg 2xl:text-2xl focus:outline-none ${
               errors["user_name"] ? "border-red-500" : ""
             }`}
             onChange={handleInputChange}
@@ -100,15 +100,15 @@ const ContactForm: React.FC = () => {
             <p className="text-red-500 text-md">{errors["user_name"]}</p>
           )}
         </div>
-        <div className="mb-4">
-          <label htmlFor="user_email" className="block text-lg mb-1">
+        <div className="mb-4 2xl:mb-6">
+          <label htmlFor="user_email" className="block text-lg 2xl:text-2xl mb-1">
             Mail
           </label>
           <input
             type="email"
             name="user_email"
             id="user_email"
-            className={`w-full border border-gray-300 rounded-sm p-2 text-lg focus:outline-none ${
+            className={`w-full border border-gray-300 rounded-sm p-2 text-lg 2xl:text-2xl focus:outline-none ${
               errors["user_email"] ? "border-red-500" : ""
             }`}
             onChange={handleInputChange}
@@ -117,15 +117,15 @@ const ContactForm: React.FC = () => {
             <p className="text-red-500 text-md">{errors["user_email"]}</p>
           )}
         </div>
-        <div className="mb-4">
-          <label htmlFor="message" className="block text-lg mb-1">
+        <div className="mb-4 2xl:mb-6">
+          <label htmlFor="message" className="block text-lg 2xl:text-2xl mb-1">
             Wiadomość
           </label>
           <textarea
             name="message"
             id="message"
             rows={4}
-            className={`w-full border border-gray-300 rounded-sm p-2 text-lg focus:outline-none ${
+            className={`w-full border border-gray-300 rounded-sm p-2 text-lg 2xl:text-2xl focus:outline-none ${
               errors["message"] ? "border-red-500" : ""
             }`}
             onChange={handleInputChange}
@@ -137,14 +137,14 @@ const ContactForm: React.FC = () => {
         <div className="flex justify-end">
           <button
             type="submit"
-            className="px-10 py-1 rounded-sm bg-stone-400 text-lg"
+            className="px-10 py-1 rounded-sm bg-stone-400 text-lg 2xl:text-2xl"
             disabled={isSending}
           >
             {isSending ? "Wysyłam..." : "Wyślij"}
           </button>
         </div>
 
-        <div className="text-right mt-2 text-lg">
+        <div className="text-right mt-2 text-lg 2xl:text-2xl">
           {isSuccess && <p>E-mail wysłany pomyślnie!</p>}
           {isError && (
             <p>
