@@ -7,6 +7,9 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+body {
+  overflow-x: hidden;
+}
 
 .line-style {
   position: relative;
@@ -120,9 +123,10 @@ html {
 .list-industries li::marker {
   content: "▶";
   font-size: 0.7rem;
-  color: #858585;
+  color: #515151;
 }
 
 .list-industries li {
   padding-left: 1rem;
 }
+
