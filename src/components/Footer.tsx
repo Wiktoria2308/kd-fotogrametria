@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { IoIosCall } from "react-icons/io";
 import { PiEnvelopeLight } from "react-icons/pi";
 import { FaFacebook } from "react-icons/fa6";
@@ -10,41 +10,22 @@ import ContactForm from './ContactForm';
 
 const Footer: React.FC = () => {
 
-    const [showScrollToTop, setShowScrollToTop] = useState<boolean>(false);
-
     const handleScrollToTop = (): void => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    const handleScroll = (): void => {
-        const scrollTop: number = window.scrollY;
-
-        if (scrollTop > 200) {
-            setShowScrollToTop(true);
-        } else {
-            setShowScrollToTop(false);
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
 
     return (
         <footer className='footer min-h-screen bg-[url("/background_14.jpg")] bg-left bg-cover bg-no-repeat relative' id='footer'>
-            <div className='backdrop-blur-sm bg-white/45 min-h-screen xl:backdrop-blur-none xl:bg-transparent'>
                 {/* Scroll up */}
-                <div
-                    id="scroll-to-top"
-                    className={`absolute bg-zinc-800 text-white cursor-pointer text-[2.5rem] p-2 top-0 left-1/2 transform -translate-x-1/2 -translate-y-[10%] ${showScrollToTop ? "show" : ""
-                        }`}
-                    onClick={handleScrollToTop}
-                >
-                    <HiChevronDoubleUp className="absolute bg-zinc-800 text-white cursor-pointer text-[2.5rem] p-2 top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+                <div className="absolute top-2 md:top-10 md:right-10 2xl:top-20 2xl:right-20 z-50 w-full md:w-[unset] flex justify-center">
+                    <button onClick={handleScrollToTop}>
+                        <HiChevronDoubleUp className="text-4xl 2xl:text-5xl bg-zinc-800 text-white p-2" />
+                    </button>
                 </div>
+
+            <div className='backdrop-blur-sm bg-white/45 min-h-screen xl:backdrop-blur-none xl:bg-transparent'>
+            
 
                 {/* Text */}
                 <div className="heading-text text-center pt-14 px-3 md:px-10 xl:px-0 w-full xl:ml-32">

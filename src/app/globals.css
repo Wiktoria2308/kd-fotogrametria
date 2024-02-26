@@ -140,13 +140,4 @@ body {
   border-style: solid!important;
 }
 
-.list-industries li::marker {
-  content: "\25B6";
-  font-size: 0.7rem;
-  color: #515151;
-}
-
-.list-industries li {
-  padding-left: 1rem;
-}
 
