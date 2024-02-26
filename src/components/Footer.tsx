@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
 
     return (
         <footer className='footer min-h-screen bg-[url("/background_14.jpg")] bg-left bg-cover bg-no-repeat relative' id='footer'>
-            <div className='backdrop-blur-sm bg-white/30 min-h-screen xl:backdrop-blur-none xl:bg-transparent'>
+            <div className='backdrop-blur-sm bg-white/45 min-h-screen xl:backdrop-blur-none xl:bg-transparent'>
                 {/* Scroll up */}
                 <div
                     id="scroll-to-top"

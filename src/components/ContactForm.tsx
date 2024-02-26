@@ -22,23 +22,23 @@ const ContactForm: React.FC = () => {
     const fieldErrors: ErrorType = {};
 
     if (!formData.get("user_name")) {
-      fieldErrors["user_name"] = "Please enter your name";
+      fieldErrors["user_name"] = "Proszę wprowadzić swoje imię";
     } else if (formData.get("user_name")!.toString().length < 2) {
-      fieldErrors["user_name"] = "Name must be at least 2 characters long";
+      fieldErrors["user_name"] = "Imię musi mieć co najmniej 2 znaki";
     }
 
     if (!formData.get("user_email")) {
-      fieldErrors["user_email"] = "Please enter your email";
+      fieldErrors["user_email"] = "Proszę podać swój adres e-mail";
     } else if (
       !/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(
         formData.get("user_email")!.toString()
       )
     ) {
-      fieldErrors["user_email"] = "Please enter a valid email address";
+      fieldErrors["user_email"] = "Proszę podać prawidłowy adres e-mail";
     }
 
     if (!formData.get("message")) {
-      fieldErrors["message"] = "Please enter a message";
+      fieldErrors["message"] = "Proszę wprowadzić wiadomość";
     }
 
     if (Object.keys(fieldErrors).length > 0) {
