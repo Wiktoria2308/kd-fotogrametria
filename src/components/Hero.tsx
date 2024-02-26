@@ -11,10 +11,10 @@ const Hero: React.FC = () => {
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [isArrowUp, setIsArrowUp] = useState<boolean>(false);
-    const [isOpenDropdown, setIsOpenDropdown] = useState(false);
+    const [isOpenDropdown, setIsOpenDropdown] = useState<boolean>(false);
     const [isArrowUpMobile, setIsArrowUpMobile] = useState<boolean>(false);
-    const [isOpenDropdownMobile, setIsOpenDropdownMobile] = useState(false);
-    const dropdownRef = useRef<HTMLUListElement>(null);
+    const [isOpenDropdownMobile, setIsOpenDropdownMobile] = useState<boolean>(false);
+    const dropdownRef = useRef<HTMLLIElement>(null);
     const dropdownRefMobile = useRef<HTMLUListElement>(null);
 
     useEffect(() => {
@@ -32,16 +32,16 @@ const Hero: React.FC = () => {
     }, []);
 
     useEffect(() => {
-        function handleClickOutside(event: MouseEvent) {
+        function handleClickOutsideMobile(event: MouseEvent) {
             if (dropdownRefMobile.current && !dropdownRefMobile.current.contains(event.target as Node)) {
                 setIsOpenDropdownMobile(false);
                 setIsArrowUpMobile(false);
             }
         }
 
-        document.addEventListener("mousedown", handleClickOutside);
+        document.addEventListener("mousedown", handleClickOutsideMobile);
         return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener("mousedown", handleClickOutsideMobile);
         };
     }, []);
    
@@ -49,6 +49,7 @@ const Hero: React.FC = () => {
         setIsOpenDropdown(prevState => !prevState);
         setIsArrowUp(prevState => !prevState);
     };
+    
 
     const toggleDropdownMobile = () => {
         setIsOpenDropdownMobile(prevState => !prevState);
@@ -73,15 +74,15 @@ const Hero: React.FC = () => {
                                 <li>
                                     <a href="#about" className="line-style line-style-link md:text-base lg:text-lg xl:text-xl" aria-current="page">O firmie</a>
                                 </li>
-                                <li className='relative'>
-                                    <div className='line-style line-style-link flex flex-row cursor-pointer' onClick={toggleDropdown}>
-                                        <p className="md:text-base lg:text-lg xl:text-xl" aria-current="page">Usługi</p>
+                                <li className='relative' ref={dropdownRef}>
+                                    <div className={`${isOpenDropdown ? '' : 'line-style line-style-link'} flex flex-row cursor-pointer`} onClick={toggleDropdown}>
+                                        <span className="md:text-base lg:text-lg xl:text-xl">Usługi</span>
                                         <div className="pl-[5px] self-center">
                                             {isArrowUp ? <SlArrowUp /> : <SlArrowDown />}
                                         </div>
                                     </div>
-                                    <ul ref={dropdownRef}
-                                        className={`absolute top-full left-0 ${isOpenDropdown ? 'opacity-100' : 'opacity-0 invisible'} transition-all duration-300 bg-white shadow-2xl rounded-md py-6 text-left pl-5 space-y-4 min-w-72 z-10`}
+                                    <ul
+                                        className={`absolute top-full left-0 ${isOpenDropdown ? 'opacity-100' : 'opacity-0 invisible'} transition-all duration-300 bg-white shadow-2xl rounded-md py-6 text-left pl-6 space-y-[1.1rem] min-w-72 2xl:min-w-96 z-10`}
                                         >
                                         <DropdownItem href="#Ortofotomapy">Ortofotomapy</DropdownItem>
                                         <DropdownItem href="#Modele 3D">Modele 3D</DropdownItem>
