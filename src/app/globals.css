@@ -126,7 +126,9 @@ body {
   .address-container{
     flex-direction: column-reverse !important;
   }
-
+  .custom-background {
+    background-position-y: 70% !important;
+  }
 }
 @media (min-width: 2500px) and (max-height: 900px) {
   .address-container{
@@ -140,6 +142,9 @@ body {
   .footer .heading2-text {
     margin-left: 16rem !important;
     margin-top: 2rem !important;
+  }
+  .custom-background {
+    background-position-y: 55% !important;
   }
 }
 
