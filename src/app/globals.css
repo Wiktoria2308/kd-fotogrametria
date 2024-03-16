@@ -133,12 +133,12 @@ body {
     flex-direction: column-reverse !important;
   }
   .footer .heading-text {
-    margin-left: 14rem !important;
+    margin-left: 16rem !important;
     padding-top: 2rem !important;
   }
 
   .footer .heading2-text {
-    margin-left: 14rem !important;
+    margin-left: 16rem !important;
     margin-top: 2rem !important;
   }
 }
