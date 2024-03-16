@@ -69,9 +69,9 @@ const Footer: React.FC = () => {
                             <ContactForm />
                         </div>
                     </div>
-                    <div className="static md:absolute bottom-0 pb-8 2xl:pb-10 w-full mt-10 md:mt-0 address">
+                    <div className="static md:absolute bottom-0 pb-8 2xl:pb-10 w-full mt-10 md:mt-0 address-contact-container">
                     {/* address */}
-                    <div className='flex md:flex-row flex-col'>
+                    <div className='flex md:flex-row flex-col address-container'>
                         <div className="flex flex-col flex-1 mb-14 xl:mb-0 xl:pl-[15rem] 2xl:pl-[21rem]">
                             <div className="space-y-2 md:space-y-1 2xl:space-y-3 self-center">
                                 <p className='font-medium text-[1.4rem] xl:text-[1.6rem] 2xl:text-3xl text-center md:text-start'>Karolina Dobrzewińska</p>

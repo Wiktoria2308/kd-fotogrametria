@@ -11,7 +11,7 @@ const config: Config = {
       backgroundImage: {
         'background1': "url('/background_1.jpg')",
         'background2': "url('/background_2.jpg')",
-        'ortofotomapy': "url('/background_4.jpg')",
+         'profile-image' : "url('/Karolina.jpeg')"
       },
     },
   },
