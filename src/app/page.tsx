@@ -1,8 +1,8 @@
 import Hero from "@/components/Hero";
-import AboutSection from "@/components/AboutSection";
+import AboutFotogrametria from "@/components/AboutFotogrametria";
 import Categories from '@/components/Categories';
 import Footer from "@/components/Footer";
-import AboutMe from "@/components/AboutMe";
+import AboutKarolina from "@/components/AboutKarolina";
 
 export default function Home() {
 
@@ -64,8 +64,8 @@ export default function Home() {
   return (
     <main className="flex flex-col text-black bg-zinc-200">
       <Hero />
-      <AboutMe />
-      <AboutSection />
+      <AboutKarolina />
+      <AboutFotogrametria />
       <Categories {...categoriesOrtofotomapy} />
       <Categories {...categoriesModele3D} />
       <Categories {...categoriesChmuryPunktów} />

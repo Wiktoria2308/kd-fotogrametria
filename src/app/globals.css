@@ -91,16 +91,115 @@ body {
     background-position-y: 70%;
   }
 }
-/* @media (min-width: 1280px) and (min-height: 900px) {
-  .categories-info-container{
-    padding-right: 3.5rem !important;
+@media (min-width:2500px) and (max-height: 910px) {
+  .about-fotogrametria-container {
+    max-width: 2000px !important;
+  }
+  .about-karolina-container {
+    max-width: 1700px !important;
+  }
+  .navbar-list li a, .navbar-dropdown-title{
+    font-size: 1.6rem !important;
+  }
+  .navbar-social-list a, .navbar-social-list p {
+    font-size: 1.6rem !important;
+  }
+  .navbar-social-list .facebook {
+    font-size: 1.8rem !important;
+  }
+  .navbar-social-list .linkedin {
+    font-size: 2.3rem !important;
+  }
+  .navbar-dropdown-list{
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    padding-left: 2rem !important;
+    font-size: 1.8rem !important;
+    line-height: 2.2rem !important;
+    min-width: 28rem !important;
+  }
+  .navbar-links-contanier {
+    align-self: center;
   }
 }
-@media (min-width: 2000px) {
-  .categories-info-container{
-    padding-right: 6rem !important;
+@media (min-width: 2500px) and (min-height: 1400px) {
+  .about-karolina-text, .about-karolina-list p {
+    font-size: 1.9rem !important;
+    font-weight: 400;
+    line-height: 3.3rem !important;
   }
-} */
+  .about-karolina-container, .hero-container{
+    max-width: 1800px !important;
+  }
+  .about-fotogrametria-container {
+    max-width: 1900px !important;
+  }
+  .about-karolina-image {
+    margin-right: 5rem !important;
+  }
+  .about-karolina-text2 {
+    margin-bottom: 10rem !important;
+  }
+  .about-karolina-text2 p{
+  font-size: 3rem !important;
+  }
+  .about-fotogrametria-text1, .about-fotogrametria-text2 {
+    font-size: 2.5rem !important;
+  }
+  .about-fotogrametria-list p{
+    font-size: 1.8rem !important;
+  }
+  .about-fotogrametria-text2 {
+    margin-top: 3rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .about-fotogrametria-text1 {
+    margin-bottom: 3% !important;
+  }
+  .about-fotogrametria-icon-title {
+    font-size: 2rem !important;
+  }
+  .about-fotogrametria-icon-description{
+    font-size: 1.8rem !important;
+    line-height: 2.5rem !important;
+  }
+  .navbar-logo {
+    max-height: 10rem !important;
+  }
+  .navbar-list li a, .navbar-dropdown-title{
+    font-size: 1.8rem !important;
+  }
+  .navbar-social-list a, .navbar-social-list p {
+    font-size: 1.8rem !important;
+  }
+  .navbar-social-list .facebook {
+    font-size: 2rem !important;
+  }
+  .navbar-social-list .linkedin {
+    font-size: 2.5rem !important;
+  }
+  .hero-container nav {
+    margin-top: 4rem !important;
+  }
+  .hero-heading {
+    margin-top: 9rem !important;
+  }
+  .hero-heading p {
+    font-size: 4.5rem !important;
+  }
+  .navbar-links-contanier {
+    align-self: center;
+  }
+  .navbar-dropdown-list{
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    padding-left: 2rem !important;
+    font-size: 1.8rem !important;
+    line-height: 3rem !important;
+    min-width: 28rem !important;
+  }
+
+} 
 @media (min-width: 1280px) and (max-height: 800px) {
   .address-contact-container {
     padding-bottom: 7px !important;

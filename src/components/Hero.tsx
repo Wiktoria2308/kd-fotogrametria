@@ -58,31 +58,31 @@ const Hero: React.FC = () => {
 
     return (
         <div className="bg-background1 bg-cover bg-center bg-no-repeat min-h-screen relative custom-background">
-            <div className='px-4 md:px-10 xl:px-0 xl:container mx-auto'>
+            <div className='px-4 md:px-10 xl:px-0 xl:container mx-auto hero-container'>
                 <nav className="w-full flex flex-col md:flex-row relative mt-10 mb-0 md:mb-10">
                     <div className='basis-1/2 mb-5 md:mb-0 md:mr-14 lg:mr-20 xl:mr-0 xl:self-center xl:flex xl:justify-center'>
                         <Link href="/" className='cursor-default'>
-                            <img src="/logo.png" className="max-h-[5rem] md:max-h-[8rem] cursor-pointer" alt="Logo" />
+                            <img src="/logo.png" className="max-h-[5rem] md:max-h-[8rem] cursor-pointer navbar-logo" alt="Logo" />
                         </Link>
                     </div>
-                    <div className='basis-1/2 xl:mt-2 '>
+                    <div className='basis-1/2 xl:mt-2 navbar-links-contanier'>
                         <div className='md:hidden'>
                             <HamburgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
                         </div>
                         <div className='flex flex-col md:space-y-8 lg:space-y-10 xl:space-y-12 hidden md:block'>
-                            <ul className="font-medium flex flex-row md:space-x-8 lg:space-x-16 rtl:space-x-reverse md:justify-end lg:justify-start">
+                            <ul className="font-medium flex flex-row md:space-x-8 lg:space-x-16 rtl:space-x-reverse md:justify-end lg:justify-start navbar-list">
                                 <li>
                                     <a href="#about" className="line-style line-style-link md:text-base lg:text-lg xl:text-xl" aria-current="page">O firmie</a>
                                 </li>
                                 <li className='relative' ref={dropdownRef}>
                                     <div className={`${isOpenDropdown ? '' : 'line-style line-style-link'} flex flex-row cursor-pointer`} onClick={toggleDropdown}>
-                                        <span className="md:text-base lg:text-lg xl:text-xl">Usługi</span>
+                                        <span className="md:text-base lg:text-lg xl:text-xl navbar-dropdown-title">Usługi</span>
                                         <div className="pl-[5px] self-center">
                                             {isArrowUp ? <SlArrowUp /> : <SlArrowDown />}
                                         </div>
                                     </div>
                                     <ul
-                                        className={`absolute top-full left-0 ${isOpenDropdown ? 'opacity-100' : 'opacity-0 invisible'} transition-all duration-300 bg-white shadow-2xl rounded-md py-6 text-left pl-6 space-y-[1.1rem] min-w-72 2xl:min-w-96 z-10`}
+                                        className={`absolute top-full left-0 ${isOpenDropdown ? 'opacity-100' : 'opacity-0 invisible'} transition-all duration-300 bg-white shadow-2xl rounded-md py-6 text-left pl-6 space-y-[1.1rem] min-w-72 2xl:min-w-96 z-10 navbar-dropdown-list`}
                                         >
                                         <DropdownItem href="#Ortofotomapy">Ortofotomapy</DropdownItem>
                                         <DropdownItem href="#Modele 3D">Modele 3D</DropdownItem>
@@ -104,13 +104,13 @@ const Hero: React.FC = () => {
                                 </li>
                             </ul>
 
-                            <div className='flex flex-row md:justify-end lg:justify-start'>
+                            <div className='flex flex-row md:justify-end lg:justify-start navbar-social-list'>
                                 <div className='flex space-x-2 lg:space-x-5'>
                                     <a href="https://www.facebook.com/profile.php?id=100093544128388" className='cursor-pointer self-center' target="_blank" rel="noopener noreferrer">
-                                        <FaFacebook className='md:text-[1.6rem] lg:text-[1.7rem]' />
+                                        <FaFacebook className='md:text-[1.6rem] lg:text-[1.7rem] facebook' />
                                     </a>
                                     <a href="https://www.linkedin.com/company/kd-fotogrametria/" className='cursor-pointer self-center' target="_blank" rel="noopener noreferrer">
-                                        <CiLinkedin className='md:text-[2.2rem] lg:text-[2.3rem]' />
+                                        <CiLinkedin className='md:text-[2.2rem] lg:text-[2.3rem] linkedin' />
                                     </a>
                                 </div>
                                 <p className='pl-2 lg:pl-5 self-center text-base md:text-base lg:text-xl w-max'>Karolina Dobrzewińska / KD Fotogrametria</p>
@@ -155,7 +155,7 @@ const Hero: React.FC = () => {
                     </div>
                 </nav>
                 {isOpen === false && (
-                    <div className='absolute lg:static top-1/4 inset-x-0 lg:mt-12 2xl:mt-16'>
+                    <div className='absolute lg:static top-1/4 inset-x-0 lg:mt-12 2xl:mt-16 hero-heading'>
                         <p className='text-black text-center text-[1.7rem] md:text-[1.7rem] lg:text-[2.3rem] 2xl:text-[3rem]'>
                             Witaj w świecie pomiarów innowacyjnych
                         </p>
