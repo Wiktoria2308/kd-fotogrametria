@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
     };
 
     return (
-        <div className="bg-background1 bg-cover bg-center bg-no-repeat min-h-screen relative custom-background">
+        <div className="bg-background1 bg-cover bg-bottom bg-no-repeat min-h-screen relative custom-background">
             <div className='px-4 md:px-10 xl:px-0 xl:container mx-auto hero-container'>
                 <nav className="w-full flex flex-col md:flex-row relative mt-10 mb-0 md:mb-10">
                     <div className='basis-1/2 mb-5 md:mb-0 md:mr-14 lg:mr-20 xl:mr-0 xl:self-center xl:flex xl:justify-center'>
@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
                                         </div>
                                     </div>
                                     <ul
-                                        className={`absolute top-full left-0 ${isOpenDropdown ? 'opacity-100' : 'opacity-0 invisible'} transition-all duration-300 bg-white shadow-2xl rounded-md py-6 text-left pl-6 space-y-[1.1rem] min-w-72 2xl:min-w-96 z-10 navbar-dropdown-list`}
+                                        className={`absolute ${isOpenDropdown ? 'opacity-100' : 'opacity-0 invisible'} transition-all duration-300 bg-white shadow-2xl rounded-md py-6 text-left pl-6 space-y-[1.3rem] min-w-72 lg:min-w-96 z-10 navbar-dropdown-list`}
                                         >
                                         <DropdownItem href="#Ortofotomapy">Ortofotomapy</DropdownItem>
                                         <DropdownItem href="#Modele 3D">Modele 3D</DropdownItem>
@@ -96,9 +96,9 @@ const Hero: React.FC = () => {
 
                                     </ul>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <a href="#footer" className="line-style line-style-link md:text-base lg:text-lg xl:text-xl" aria-current="page">Realizacje</a>
-                                </li>
+                                </li> */}
                                 <li>
                                     <a href="#footer" className="line-style line-style-link md:text-base lg:text-lg xl:text-xl" aria-current="page">Kontakt</a>
                                 </li>
@@ -143,9 +143,9 @@ const Hero: React.FC = () => {
                                     </ul>
                                 </li>
 
-                                <li>
+                                {/* <li>
                                     <a href="#footer" className="text-xl pr-5" aria-current="page">Realizacje</a>
-                                </li>
+                                </li> */}
                                 <li>
                                     <a href="#footer" className="text-xl pr-5" aria-current="page">Kontakt</a>
                                 </li>
