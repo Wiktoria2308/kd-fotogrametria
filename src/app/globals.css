@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
 
 
 html {
@@ -35,7 +37,7 @@ body {
   transform-origin: 100% 50%;
   transform: scale3d(0, 1, 1);
   transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
-}
+}e
 
 .line-style-link:hover::before {
   transform-origin: 0% 50%;
@@ -140,7 +142,22 @@ body {
   }
   
 }
+@media (min-width: 1900px) and (max-height: 1080px){
+  .description p {
+    font-size: 1.4rem !important;
+    line-height: 2.2rem !important;
+  }
+}
+
+
 @media (min-width: 2500px) and (min-height: 1400px) {
+  .description p {
+    font-size: 1.9rem !important;
+    line-height: 2.8rem !important;
+  }
+  .categories-title {
+    font-size: 2.5rem !important;
+  }
   .about-karolina-text, .about-karolina-list p {
     font-size: 1.9rem !important;
     font-weight: 400;
@@ -256,6 +273,10 @@ body {
     margin-left: 15rem !important;
     margin-top: 2rem !important;
   }
+  .description p {
+    font-size: 1.6rem !important;
+    line-height: 2.5rem !important;
+  }
 }
 
 
@@ -275,3 +296,30 @@ body {
   border-style: solid!important;
 }
 
+@media (min-width:1281px) and (max-height:650px) {
+  .description p {
+    font-size: 1rem !important;
+  }
+  .address-container{
+    flex-direction: column-reverse !important;
+    margin-left: 20px;
+  }
+  .heading-text p{
+    line-height: 2rem !important;
+  }
+  .heading2-text h2 {
+    font-size: 1.2rem !important;
+  }
+  .address-container .name {
+    font-size: 1.5rem !important;
+  }
+  .custom-background {
+    background-position-y: 75%;
+  }
+}
+
+@media (min-width: 2500px) {
+  .contact-form form {
+    max-width: 42rem !important;
+  }
+}

@@ -48,20 +48,20 @@ const Categories: React.FC<CategoriesProps> = ({ title, description, image, imag
 
 
   return (
-    <div className={`xl:relative h-full xl:min-h-screen pt-20 lg:pt-0 ${title}`} id={title}>
+    <div className={`xl:relative h-full xl:min-h-screen pt-10 lg:pt-0 ${title}`} id={title}>
       <div className="xl:absolute xl:inset-0 bg-cover bg-center h-[300px] md:h-[500px] xl:h-full" style={{
         backgroundImage: is2XlScreen ? `url(${image})` : `url(${image2})`
       }}></div>
       <img className='inset-y-0 left-0 absolute w-3/12 mt-5 ml-5 hidden xl:block' src="logo.png" alt="logo" />
-      <div className={`xl:inset-y-0 xl:right-0 xl:absolute w-full xl:w-[35%] 2xl:w-[30%] flex flex-col xl:justify-center px-6 lg:px-0 lg:pr-10 2xl:pr-16 categories-info-container`}>
-        <div className="text-black xl:text-white pt-10 pb-20 md:pb-10 lg:min-h-[unset] categories-info ">
-          <h2 className="text-xl md:text-xl lg:text-2xl 2xl:text-3xl font-medium mb-5 lg:mb-6 2xl:mb-10 text-center">{title}</h2>
-          <div className="overflow-auto xl:max-h-[400px] 2xl:max-h-[unset] description">
-            <p className="text-lg md:text-lg/9 2xl:text-2xl/10 font-normal text-left lg:text-center">
+      <div className={`xl:inset-y-0 xl:right-0 xl:absolute w-full xl:w-[35%] 2xl:w-[30%] flex flex-col xl:justify-center px-6 xl:px-0 xl:pr-10 2xl:pr-16`}>
+        <div className="text-black xl:text-white pt-10 pb-20 md:pb-10 xl:py-0 xl:min-h-[unset]">
+          <h2 className="text-xl md:text-xl lg:text-2xl 2xl:text-3xl font-medium mb-5 lg:mb-6 2xl:mb-10 text-center categories-title">{title}</h2>
+          <div className="description">
+            <p className="font-normal text-left xl:text-center text-lg">
               {getDescription()}
             </p>
             {!showFullDescription && !is2XlScreen && (
-              <div className='lg:text-center'>
+              <div className='xl:text-center'>
                 <button className="text-base font-normal text-gray-800 hover:text-black mt-4 underline" onClick={toggleDescription}>
                   Czytaj więcej
                 </button>

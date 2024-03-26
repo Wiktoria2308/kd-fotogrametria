@@ -80,7 +80,7 @@ const ContactForm: React.FC = () => {
     <div className="contact-form rounded-sm backdrop-blur-xl xl:backdrop-blur-none bg-white/50 xl:bg-transparent py-10 xl:py-0 px-5 md:px-10 xl:px-0 w-[95%] md:w-2/3 xl:w-full mx-auto xl:mx-0" id="contact">
       <form
         id="contact-form"
-        className="max-w-md mx-auto 2xl:max-w-2xl"
+        className="max-w-md mx-auto 2xl:max-w-lg"
         onSubmit={handleSubmit}
         noValidate
       >
