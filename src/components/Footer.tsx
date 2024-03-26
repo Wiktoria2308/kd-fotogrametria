@@ -64,6 +64,18 @@ const Footer: React.FC = () => {
                                 </div>
 
                             </div>
+
+                            {/* wide screen only */}
+                            <div className="space-y-2 lg:space-y-1 2xl:space-y-3 self-center mt-20 hidden footer-address-short-wide-screen">
+                                <p className='font-medium text-[1.4rem] xl:text-[1.6rem] 2xl:text-2xl text-center lg:text-start name'>Karolina Dobrzewińska</p>
+                                <div className='flex justify-center lg:justify-start'>
+                                    <BsGeoAlt className='self-center text-lg' />
+                                    <p className='text-base xl:text-lg pl-2 w-max 2xl:text-2xl'>Szkolna 27, 84-123 Połchowo, Pomorskie</p>
+                                </div>
+                                <p className='text-base xl:text-lg 2xl:text-xl text-center lg:text-start'><span className='font-medium'>NIP</span> 5871741423 <span className='font-medium pl-2'>REGON</span> 525775750</p>
+                            </div>
+
+
                         </div>
                         <div className='flex-1 mt-10 xl:mt-16 2xl:mt-28'>
                             <ContactForm />
@@ -72,8 +84,8 @@ const Footer: React.FC = () => {
                     <div className="static xl:absolute bottom-0 pb-8 2xl:pb-10 w-full mt-10 lg:mt-20 xl:mt-0 address-contact-container">
                     {/* address */}
                     <div className='flex lg:flex-row flex-col address-container'>
-                        <div className="flex flex-col flex-1 mb-14 xl:mb-0 xl:pl-[15rem] 2xl:pl-[21rem]">
-                            <div className="space-y-2 lg:space-y-1 2xl:space-y-3 self-center">
+                        <div className="flex flex-col flex-1 mb-14 xl:mb-0 xl:pl-[15rem] 2xl:pl-[21rem] footer-address-normal-screen">
+                            <div className="space-y-2 lg:space-y-1 xl:space-y-2 2xl:space-y-3 self-center">
                                 <p className='font-medium text-[1.4rem] xl:text-[1.6rem] 2xl:text-3xl text-center lg:text-start name'>Karolina Dobrzewińska</p>
                                 <div className='flex justify-center lg:justify-start'>
                                     <BsGeoAlt className='self-center text-lg' />
