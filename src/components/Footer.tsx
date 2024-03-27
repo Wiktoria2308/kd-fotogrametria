@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
                         Twój partner w pomiarach <br /> innowacyjnych
                     </p>
                 </div>
-                <div className="text-center w-full xl:ml-32 mt-10 mb-0 lg:my-10 2xl:my-20 heading2-text">
+                <div className="text-center w-full xl:ml-32 mt-10 mb-0 lg:my-10 heading2-text">
                     <h2 className="text-[1.4rem] lg:text-xl xl:text-2xl 2xl:text-4xl font-normal">Bądźmy w kontakcie</h2>
                 </div>
        

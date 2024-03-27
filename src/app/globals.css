@@ -114,10 +114,6 @@ body {
   .description p {
     font-size: 1rem !important;
   }
-  /* .address-container{
-    flex-direction: column-reverse !important;
-    margin-left: 20px;
-  } */
   .heading-text p{
     line-height: 2rem !important;
   }
@@ -164,10 +160,8 @@ body {
   }
 }
 
-@media (min-width: 2500px) and (min-height:901px) and (max-height: 1080px) {
-  /* .address-container{
-    flex-direction: column-reverse !important;
-  } */
+@media (min-width: 2500px) and (min-height:800px) and (max-height: 900px) {
+  
   .custom-background {
     background-position-y: 75% !important;
   }
@@ -183,6 +177,54 @@ body {
   .description p {
     font-size: 1.6rem !important;
     line-height: 2.5rem !important;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 2499px) and (max-height: 1000px){
+  .custom-background {
+    background-position-y: 80% !important;
+  }
+}
+
+@media (min-width: 2000px) and (max-width: 2499px) and (min-height: 1001px) and (max-height: 1300px){
+  .custom-background {
+    background-position-y: 85% !important;
+  }
+}
+
+@media (min-width: 1537px) and (max-width: 1700px) and (max-height:900px) {
+  .custom-background {
+    background-position-y: 80% !important;
+  }
+}
+
+@media (min-width: 1701px) and (max-width: 1900px) and (max-height:900px) {
+  .custom-background {
+    background-position-y: 75% !important;
+  }
+}
+
+@media (min-width: 1901px) and (max-width: 2499px) and (max-height:900px) {
+  .custom-background {
+    background-position-y: 70% !important;
+  }
+}
+
+@media (min-width: 2500px) and (min-height:600px) and (max-height: 801px) {
+  .custom-background {
+    background-position-y: 70% !important;
+  }
+}
+
+@media (min-width: 2500px) and (min-height:901px) and (max-height: 1100px) {
+  .custom-background {
+    background-position-y: 78% !important;
+  }
+}
+
+@media (min-width: 2500px) and (min-height:1101px) and (max-height: 1200px) {
+  .custom-background {
+    background-position-y: 88% !important;
   }
 }
 
@@ -302,7 +344,7 @@ body {
   }
 }
 
- @media (min-width: 800px) and (max-width: 1000px) {
+ @media (min-width: 700px) and (max-width: 1000px) {
   .navbar-dropdown-list {
     right: 0;
   }
@@ -316,6 +358,20 @@ body {
   .about-karolina-container {
     max-width: 1700px !important;
   }
+  
+  .footer .heading-text {
+    margin-left: 16rem !important;
+    padding-top: 2rem !important;
+  }
+
+  .footer .heading2-text {
+    margin-left: 16rem !important;
+    margin-top: 2rem !important;
+  }
+  
+}
+
+@media (min-width:2500px) {
   .navbar-list li a, .navbar-dropdown-title{
     font-size: 1.6rem !important;
   }
@@ -341,19 +397,6 @@ body {
   .navbar-links-contanier {
     align-self: center;
   }
-  /* .address-container{
-    flex-direction: column-reverse !important;
-  } */
-  .footer .heading-text {
-    margin-left: 16rem !important;
-    padding-top: 2rem !important;
-  }
-
-  .footer .heading2-text {
-    margin-left: 16rem !important;
-    margin-top: 2rem !important;
-  }
-  
 }
 
 @media (min-width: 2550px) and (max-height: 1200px) {
@@ -418,4 +461,11 @@ body {
   .footer-address-short-wide-screen {
     display: block;
   }
+ }
+
+ @media (max-height: 1100px) and (min-width:1500px) {
+  
+    .heading2-text {
+      margin-top: 2rem !important;
+    }
  }
